@@ -7,11 +7,18 @@
 
 import UIKit
 import FSCalendar
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, FSCalendarDelegate {
+    @IBOutlet var calendar: FSCalendar!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        calendar.delegate = self;
+        func calendarFunc(_ calendar: FSCalendar, didDeselect date: Date, at: FSCalendarMonthPosition) {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "EEEE dd-MM-YY"  //MM-dd-YY
+            let string = formatter.string(from: date)
+            print("\(string)")
+        }
+       
     }
 
 

@@ -32,6 +32,9 @@
                             <constraint firstItem="rB1-ef-314" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xeR-gu-eSC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="calendar" destination="rB1-ef-314" id="1Nj-S1-mz0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
