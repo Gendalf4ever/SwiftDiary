@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,8 @@
 		AF8C3FEC26E39ADF00BA1562 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF8C3FEA26E39ADF00BA1562 /* LaunchScreen.storyboard */; };
 		AF8C3FF726E39ADF00BA1562 /* SwiftDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C3FF626E39ADF00BA1562 /* SwiftDiaryTests.swift */; };
 		AF8C400226E39ADF00BA1562 /* SwiftDiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C400126E39ADF00BA1562 /* SwiftDiaryUITests.swift */; };
+		AF8C402926E3B55900BA1562 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C402826E3B55900BA1562 /* Model.swift */; };
+		AFE01E1226F6ABCE00678865 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE01E1126F6ABCE00678865 /* TableViewController.swift */; };
 		CF7688CBFF2295D3D0A35CE7 /* Pods_SwiftDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DEA9B635A5C8AAE87C881F /* Pods_SwiftDiary.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,8 @@
 		AF8C3FFD26E39ADF00BA1562 /* SwiftDiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDiaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8C400126E39ADF00BA1562 /* SwiftDiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDiaryUITests.swift; sourceTree = "<group>"; };
 		AF8C400326E39ADF00BA1562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF8C402826E3B55900BA1562 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		AFE01E1126F6ABCE00678865 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		C560E3280C65CDC20EF4F06D /* Pods_SwiftDiaryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDiaryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -117,12 +121,14 @@
 			isa = PBXGroup;
 			children = (
 				AF8C3FDF26E39ADC00BA1562 /* AppDelegate.swift */,
+				AF8C402826E3B55900BA1562 /* Model.swift */,
 				AF8C3FE126E39ADC00BA1562 /* SceneDelegate.swift */,
 				AF8C3FE326E39ADC00BA1562 /* ViewController.swift */,
 				AF8C3FE526E39ADC00BA1562 /* Main.storyboard */,
 				AF8C3FE826E39ADF00BA1562 /* Assets.xcassets */,
 				AF8C3FEA26E39ADF00BA1562 /* LaunchScreen.storyboard */,
 				AF8C3FED26E39ADF00BA1562 /* Info.plist */,
+				AFE01E1126F6ABCE00678865 /* TableViewController.swift */,
 			);
 			path = SwiftDiary;
 			sourceTree = "<group>";
@@ -165,7 +171,6 @@
 				1C37606B14AAD713E5FDBAA9 /* Pods-SwiftDiaryTests.debug.xcconfig */,
 				942B63643BAA8E76CCACB2C0 /* Pods-SwiftDiaryTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -410,6 +415,8 @@
 				AF8C3FE426E39ADC00BA1562 /* ViewController.swift in Sources */,
 				AF8C3FE026E39ADC00BA1562 /* AppDelegate.swift in Sources */,
 				AF8C3FE226E39ADC00BA1562 /* SceneDelegate.swift in Sources */,
+				AFE01E1226F6ABCE00678865 /* TableViewController.swift in Sources */,
+				AF8C402926E3B55900BA1562 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
