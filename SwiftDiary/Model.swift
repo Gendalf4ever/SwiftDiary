@@ -13,7 +13,7 @@ var hours: [String] = ["0:00-1:00", "1:00-2:00", "2:00-3:00", "3:00-4:00",
 "16:00-17:00","17:00-18:00","18:00-19:00","19:00-20:00","20:00-21:00",
 "21:00-22:00","22:00-23:00","23:00-0:00"]
 
-
+var cases: [String] = ["bebe","baba","bubu"]
 func loadData() {
     
 }
@@ -23,9 +23,11 @@ func saveData(){
 }
 
 func addCase(nameOfCase: String){
-    
+    cases.append(nameOfCase)
+    saveData()
 }
 
 func removeCase(at index: Int) {
-    
+    cases.remove(at: index)
+    saveData()
 }

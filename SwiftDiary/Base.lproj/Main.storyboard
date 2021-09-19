@@ -17,14 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rB1-ef-314" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="44" width="414" height="250"/>
+                                <rect key="frame" x="0.0" y="147" width="414" height="250"/>
                                 <color key="backgroundColor" systemColor="separatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="XT0-mO-5f0"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yhY-Bm-PtJ">
-                                <rect key="frame" x="28" y="341" width="359" height="383"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yhY-Bm-PtJ">
+                                <rect key="frame" x="28" y="437" width="359" height="383"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="sectionIndexBackgroundColor" red="0.75146685980000005" green="0.1874284984" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
@@ -60,6 +60,13 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="R0A-Xa-msV"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qc-BS-WaD">
+                                <rect key="frame" x="362" y="81" width="25" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="Vew-3a-QRh" kind="show" id="YKi-Xq-NCY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -68,8 +75,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yhY-Bm-PtJ" secondAttribute="trailing" constant="27" id="5pc-ym-L3h"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rB1-ef-314" secondAttribute="trailing" id="b9E-ZT-z56"/>
                             <constraint firstItem="rB1-ef-314" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qh1-4K-iPg"/>
-                            <constraint firstItem="yhY-Bm-PtJ" firstAttribute="top" secondItem="rB1-ef-314" secondAttribute="bottom" constant="47" id="vsl-iL-dRZ"/>
-                            <constraint firstItem="rB1-ef-314" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xeR-gu-eSC"/>
+                            <constraint firstItem="yhY-Bm-PtJ" firstAttribute="top" secondItem="rB1-ef-314" secondAttribute="bottom" constant="40" id="vsl-iL-dRZ"/>
+                            <constraint firstItem="rB1-ef-314" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="103" id="xeR-gu-eSC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yhY-Bm-PtJ" secondAttribute="bottom" constant="138" id="y1R-aI-ivz"/>
                         </constraints>
                     </view>
@@ -87,11 +94,11 @@
             <objects>
                 <tableViewController id="Vew-3a-QRh" customClass="TableViewController" customModule="SwiftDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Gza-X1-nMA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="wiH-wP-8KL">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="wiH-wP-8KL">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wiH-wP-8KL" id="eVw-87-Yx2">
@@ -105,6 +112,7 @@
                             <outlet property="delegate" destination="Vew-3a-QRh" id="c4b-Uz-fMq"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="enf-Sk-7h5"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aS1-eO-PYu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
