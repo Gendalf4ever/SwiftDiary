@@ -31,3 +31,4 @@ func removeCase(at index: Int) {
     cases.remove(at: index)
     saveData()
 }
+
